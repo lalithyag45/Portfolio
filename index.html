@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <div class="navbar">
+        <nav>
+          <h1>Lalithya</h1>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contactt">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="head">
+        <div class="head_text">
+          <h1>Hi, Iam Lalithya a CSE undergraudate Student <br />from SASTRA</h1>
+        </div>
+        <div class="head_image">
+          <img src="images/header.jpeg" />
+        </div>
+      </div>
+    </div>
+    <!-- Section1 -->
+    <div id="about">
+      <div class="sec1_cont">
+        <div class="sec1_img">
+          <img src="images/about.jpeg" />
+        </div>
+        <div class="sec1_text">
+          <h1>About Me</h1>
+          <p>
+            Iam Lalithya, a third year student from SASTRA and a budding web developer and competitive programmer. I'm always keen to learn new things and believe hard work never fails.
+          </p>
+          <div class="tab_titles">
+            <p class="link active-link" onclick="opentab('skills')">Skills</p>
+            <p class="link" onclick="opentab('education')"">Education</p>
+            <p class= "link" onclick="opentab('projects')"">Projects</p>
+          </div>
+          <div class="tab_cont active-tab" id="skills">
+            <ul>
+              <li>
+                <br>
+                <span>Languages</span><br />C++ | C | PYTHON | JAVA | HTML | CSS
+              </li>
+              <li>
+                <br>
+                <span>Technical skills</span><br />Data Structures | Algorithms
+                | DAA
+              </li>
+              <br>
+              <li><span>Expertise Area</span><br />CP | SQL | DJANGO</li>
+            </ul>
+          </div>
+          <div class="tab_cont" id="education">
+            <ul>
+              <li>
+                <br>
+                <span>2020-present (B-tech)</span><br />SASTRA Deemed to be
+                University - 9.06 CGPA
+              </li>
+              <li>
+                <br>
+                <span>2018-2020 (Higher Secondary)</span><br />Sri Vivekananda
+                Junior College - 97.5%
+              </li>
+              <li>
+                <br>
+                <span>2018 (Secondary)</span><br />Camford English High School - 10 GPA
+              </li>
+            </ul>
+          </div>
+          <div class="tab_cont" id="projects">
+            <ul>
+              <li>
+                <br>
+                <span><a class="zomlink" href="https://lalithyag45.github.io/MyZomato/">Zomato-Clone </a>(HTML | CSS)</span><br />Cloned ZOMATO
+                landing Page using HTML and CSS
+              </li>
+              <li>
+                <br>
+                <span>Employee-Portal (DJANGO | SQL | HTML-CSS)</span
+                ><br /> It maintains an Employee Database and can perform CRUD
+                operations.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section2 -->
+    <div id="contactt">
+      <div class="contact">
+        <h1>Contact Me</h1>
+        <div class="cont1">
+          <p><i class="fa-solid fa-paper-plane"></i> lalithyag45@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91-9390295396</p>
+          <br>
+        <div class="socialmedia">
+          <a href="https://www.linkedin.com/in/lalithyag/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/lalithyag45"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:lalithyag45@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div>
+          <a href="images/Resume.pdf" download class="btn btn"><button>Download CV</button></a>
+        </div>
+      </div>
+        
+
+
+      </div>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>@copyright issue website made by lalithya</p>
+    </footer>
+
+
+
+    <script>
+      var tablinks=document.getElementsByClassName("link");
+      var tabcont=document.getElementsByClassName("tab_cont");
+      function opentab(name)
+      {
+        for(l of tablinks)
+        {
+          l.classList.remove("active-link");
+        }
+        for(c of tabcont)
+        {
+          c.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(name).classList.add("active-tab");
+      }
+
+    </script>
+  </body>
+</html>
